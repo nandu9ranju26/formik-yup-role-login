@@ -15,6 +15,7 @@ const LoginForm = () => {
       password: Yup.string().required('Required'),
     }),
     onSubmit: (values) => {
+        console.log("Testing Git and Vercel deployment");
       alert('Login successful');
       navigate(`/dashboard/${role}`);
     },
